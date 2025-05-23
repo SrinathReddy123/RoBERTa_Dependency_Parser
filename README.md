@@ -3,3 +3,5 @@
 3. Preprocessing : Execute: python preprocess.py
 4. Making sure to validate data by ensuring all samples are having valid indices: Execute: python validate_data.py
 5. Train the parser: Execute: python trainer.py --config config.json
+6. After model training is done, best checkpoint will be saved also performance plots are generated in experiments
+7. To test the model: Execute: python test.py 
