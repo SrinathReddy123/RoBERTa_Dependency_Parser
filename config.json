@@ -1,0 +1,12 @@
+{
+  "model_name": "roberta-base",
+  "hidden_dim": 768,
+  "batch_size": 64,
+  "device": "cuda",
+  "train_file": "processed_data/ewt/train.json",
+  "dev_file": "processed_data/ewt/dev.json",
+  "test_file": "processed_data/ewt/test.json",
+  "label_vocab": "processed_data/ewt/label_vocab.json",
+  "log_dir": "experiments",
+  "num_epochs": 100
+}
