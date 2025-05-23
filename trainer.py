@@ -344,6 +344,16 @@ def run_hyperparameter_search(config):
     
     # Define search space
     hp_configs = { 
+        'ce': [
+            {'alpha': 0.3, 'lr': 1e-5},
+            {'alpha': 0.5, 'lr': 1e-5},
+            {'alpha': 0.7, 'lr': 1e-5}
+        ],
+        'focal': [
+            {'gamma': 1.0, 'alpha': 0.5},
+            {'gamma': 2.0, 'alpha': 0.5},
+            {'gamma': 3.0, 'alpha': 0.5}
+        ],
         'arc_margin': [
             {'margin': 0.1, 'alpha': 0.5},
             {'margin': 0.3, 'alpha': 0.5},
